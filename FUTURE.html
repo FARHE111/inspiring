@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="descripion" content="Journey through the future">
+  <title>Journey through the future</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: linear-gradient(135deg, #1c1c3c, #2a2a72);
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    h1 {
+      font-size: 3em;
+      color: #b2fefa;
+      text-shadow: 0 0 15px #00ffe5;
+      animation: fadeIn 2s ease-out;
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      color: #e0f7ff;
+      animation: fadeIn 3s ease-out;
+    }
+
+    .icon-button {
+      margin-top: 30px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #00bcd4;
+    }
+
+    .icon-button:hover {
+      background-color: #0097a7;
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 0 20px #0097a7;
+    }
+
+    /* تأثيرات الخلفية التكنولوجية */
+    .background-animation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(0, 128, 128, 0.5), rgba(0, 0, 0, 0.7));
+      animation: moveBackground 10s linear infinite;
+      pointer-events: none; /* لإبقاء العناصر الأخرى قابلة للاستخدام */
+    }
+
+    /* تحريك الخلفية بشكل ناعم */
+    @keyframes moveBackground {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    /* تأثير التلاشي للنص */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* تأثير الخطوط المتحركة */
+    .moving-lines {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .line {
+      position: absolute;
+      border: 1px solid #00bcd4;
+      width: 100%;
+      height: 100%;
+      animation: moveLines 6s linear infinite;
+    }
+
+    @keyframes moveLines {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- تأثير الحركة للخطوط المتنقلة -->
+  <div class="moving-lines">
+    <div class="line" style="top: 20%; animation-duration: 8s;"></div>
+    <div class="line" style="top: 40%; animation-duration: 7s;"></div>
+    <div class="line" style="top: 60%; animation-duration: 10s;"></div>
+  </div>
+
+  <!-- تأثيرات الخلفية المتحركة -->
+  <div class="background-animation"></div>
+
+  <h1>مرحبًا بك في آلة الزمن للتكنولوجيا</h1>
+  <p>احد العلماء يضغط على زر التشغيل ويبدأ الجهاز بإصدار أضواء نابضة وهمسات إلكترونية فجأة يظهر أمامهم نفق ضوئي، ومعه تبدأ الرحلة</p>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/08/19/audio_d3c19d1e59.mp3?filename=soft-futuristic-ambient-112194.mp3" type="audio/mpeg">
+  </audio>
+
+  <a href="About.html" class="icon-button"><i class="fas fa-forward"></i></a>
+
+</body>
+</html>
