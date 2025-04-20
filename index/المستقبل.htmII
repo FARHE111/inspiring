@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link rel="stylesheet" type="text/css" href="مستقبل.css">
+  <meta charset="UTF-8">
+  <title>آلة الزمن للتكنولوجيا</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #0f1c2e;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1e3a5f;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .section h1 {
+      color: #80f3e9f4;
+    }
+    .section img {
+      max-width: 90%;
+      height: auto;
+      border: 3px solid #ffcc00;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    
+    footer {
+      background: #1e3a5f;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    /* تأثير الخلفية المتحركة */
+    .background-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* تأكد من أنها خلف المحتوى */
+      background: radial-gradient(white 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: starsMove 20s linear infinite;
+      opacity: 0.1; /* تجعلها شفافة */
+    }
+
+    @keyframes starsMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 1000px; }
+    }
+
+    .icon-button {
+      margin-top: 30px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      text-decoration: none;
+      transition: 0.3s;
+      box-shadow: 0 0 15px #00bcd4;
+    }
+
+    .icon-button:hover {
+      background-color: #0097a7;
+      transform: scale(1.1) rotate(10deg);
+      box-shadow: 0 0 20px #0097a7;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h1 class="glow-text">آلة الزمن للتكنولوجيا</h1>
+  <h2>رحلة خيالية عبر عصور التكنولوجيا</h2>
+</header>
+
+<section class="section">
+  <h1>1. عصر التكنولوجيا القديمة (3000 ق.م - 1800م)</h1>
+  <h2><p>المركب الأول يأخذهم إلى عصور مصر القديمة والنهضة العربية. يرون البرديات، وأول الآلات الفلكية، والساعات المائية، ومعامل جابر بن حيان.</h2></p>
+  <img src="../المستقبل/1.jpg" alt="عصر التكنولوجيا القديمة" width="600" height="400">
+</section>
+
+<section class="section">
+  <h1>2. الثورة الصناعية (1800 - 1950)</h1>
+  <h2><p>ينتقل الفريق إلى مصانع لندن، يرون أول محرك بخاري، والقطارات، والتلغراف. يبدأ الإنسان بترويض الآلة لأول مرة.</h2></p>
+  <img src="../المستقبل/2.jpg" alt="الثورة الصناعية والتطور" width="600" height="400">
+</section>
+
+<section class="section">
+  <h1>3. العصر الرقمي (1950 - 2025)</h1>
+  <h2><p>الزمن يتسارع، الحواسيب تملأ الغرف، ثم تتقلص لحجم الجيب. الإنترنت يولد. الهواتف الذكية تسيطر على العالم.</h2></p>
+  <img src="../المستقبل/3.jpg" alt="العصر الرقمي" width="600" height="400">
+</section>
+
+<section class="section">
+  <h1>4. مستقبل التكنولوجيا (2125 وما بعد)</h1>
+  <h2><p>في المرحلة الأخيرة، يرى الفريق مدنًا طائرة، سيارات ذاتية القيادة، ذكاءً صناعيًا يتحدث مع البشر، وهولوغرامات تملأ المكان. كل شيء متصل… حتى الأفكار!</h2></p>
+  <img src="../المستقبل/4.jpg" alt="مستقبل التكنولوجيا" width="600" height="400">
+</section>
+
+<!-- تأثيرات الخلفية المتحركة -->
+<div class="background-animation"></div>
+
+<a href="the end.html" class="icon-button"><i class="fas fa-forward"></i> نهايه الرحله </a>
+
+</body>
+</html>
